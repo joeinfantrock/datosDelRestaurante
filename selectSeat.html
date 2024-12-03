@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/Sty.css') }}">
+</head>
+<body>
+    <span align-text-top>
+        <h1 id="movname">
+            <center><font color="red">{{fo}}</font></center>
+        </h1>
+    </span>
+    <form action="/confo" method="post">
+        <img id="seat" class="ourLogo" src="{{ url_for('static', filename='images/seating.png') }}">
+        <img id="screen" class="ourLogo" src="{{ url_for('static', filename='images/screen.png') }}">
+        <h3 id="screentext"><center>Screen</center></h3>
+        <br><br>
+        <center>
+            <p id="firstcust">Ticket Seat Details:</p>
+            <label id="rowname" style="font-size: 35px;" for="row">Select Row:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="row">
+                <option disabled>A</option> 
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+                <option>F</option> 
+                <option>G</option>
+                <option>H</option>
+                <option>I</option>
+                <option>J</option>
+                <option>K</option>
+                <option>L</option>
+                <option>M</option>
+                <!--<option>Bulk Order</option>-->
+            </select>
+            <br>
+            <label id="seatname" style="font-size: 35px;" for="seatno">Select Seat:</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="seatno">
+                <option>1</option> 
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option> 
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <!--<option>Bulk Order</option>-->
+            </select>
+        </center>
+        <br><br><br><br><br><br>
+        <input type="text" id="rownames" name="rowal" class="foodname">
+        <input type="text" id="rownos" name="rownum" class="foodname">
+        <input type="text" id="flag" name="hidden3" class="foodname">
+        <br>
+        <input type="submit" value="Submit" id="sub3" onclick="cowseat()">
+    </form>
+    <script type="text/javascript" src="{{ url_for('static', filename='Script/scrip.js') }}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
