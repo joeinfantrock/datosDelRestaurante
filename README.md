@@ -10,4 +10,10 @@ I have also used HTML templates, CSS for styling and JavaScript, for actions aft
 Command:
 > pip install Flask
 
-# Framework used: Flask <br>
+# Code to include Ionicons <br>
+```html
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+'''
+<br>Ionicons to have symbols of a person and lock for username and password.
+>
